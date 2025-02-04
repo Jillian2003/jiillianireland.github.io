@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" class="print:text-[13px] print:leading-tight">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jilly Jam</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+        <style>
+        * { font-family: "Roboto", sans-serif;font-weight: 300;}
+        h2, h3 { font-family: "Open Sans", sans-serif; }
+        table td { padding-right: 1em; color: #222; font-weight: 100;}
+        .hidden { display: none; }
+        html { scrollbar-gutter: stable;}
+        </style>
+    </head>
+    <body class="font-sans bg-white text-gray-900 py-8">
+        <div class="max-w-5xl mx-auto p-6">
+            <header class="mb-8 flex justify-between">
+                <h1 class="text-4xl cursor-pointer" onclick="showPage('overview')"> <span class="font-weight-400 mb-2">Jilly</span> <span class="font-thin">Jam</span></h1>
+                <div class="flex items-center text-gray-600">
+                    <a href="mailto:islamnurdin9@gmail.com" class="mr-4">islamnurdin9@gmail.com</a>
+        
+                </div>
+            </header>
+
+            <nav class="mb-8">
+                <ul class="flex border rounded-lg overflow-hidden">
+                    <li class="flex-1">
+                        <button
+                            class="w-full py-2 bg-gray-100"
+                            onclick="showPage('overview')"
+                        >
+                            Overview
+                        </button>
+                    </li>
+                    <li class="flex-1">
+                        <button
+                            class="w-full py-2"
+                            onclick="showPage('experience')"
+                        >
+                            Experience
+                        </button>
+                    </li>
+                    <li class="flex-1">
+                        <button
+                            class="w-full py-2"
+                            onclick="showPage('projects')"
+                        >
+                            Projects
+                        </button>
+                    </li>
+                    <li class="flex-1">
+                        <button
+                            class="w-full py-2"
+                            onclick="showPage('consulting')"
+                        >
+                            Essays
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="content"></div>
+        </div>
+
+        <script>
+            function showPage(pageName) {
+                // Logic to show the respective content dynamically
+            }
+        </script>
+    </body>
+</html>
